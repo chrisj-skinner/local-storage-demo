@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Workshop 8</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
+        <style type="text/css">
+        .align-right {
+            margin-left: 10px; 
+            float: right;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="page-header">
+                <h1>Local Storage Demo</h1>
+            </div>
+            <p>Form fields are stored in Local Storage with an onclick keyup.</p>
+            <ul>
+                <li>Inspect local storage in developer tools to see this happen in real-time.</li>
+                <li>Refreshing the browser clears the form but preserves local storage</li>
+                <li><strong>Restore</strong> - populates the form again from local storage data (if any).</li>
+                <li><strong>Clear</strong> - removes ALL local storage.</li>
+            </ul>
+            <form id="adduser">
+                <div class="form-group">
+                    <label for="input-name">Name</label>
+                    <input name="userName" type="text" class="form-control" id="input-name">
+                </div>
+                <div class="form-group">
+                    <label for="input-email">Email Address</label>
+                    <input name="userEmail" type="text" class="form-control" id="input-email">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary align-right" id="clear-button">Clear (BEWARE - I'll clear ALL your localstorage!)</button>
+                    <button class="btn btn-primary align-right" id="restore-button">Restore</button>
+                </div>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
