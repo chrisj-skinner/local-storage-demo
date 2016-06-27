@@ -1,10 +1,9 @@
 # Local Storage Demo
 
-Form fields are stored in Local Storage. Restore button re-populates form with stored data. Clear button removes ALL local storage.
+Recently learnt more about Local Storage and developed this small demo.
 
-Form fields are stored in Local Storage with an onclick keyup.
+The form fields are stored in Local Storage with an onclick keyup listener (inspect local storage in developer tools to see this happen in real-time).
 
-- Inspect local storage in developer tools to see this happen in real-time
 - Refreshing the browser clears the form but preserves local storage
 - <strong>Restore</strong> - populates the form again from local storage data (if any)
 - <strong>Clear</strong> - removes ALL local storage
@@ -14,7 +13,7 @@ Form fields are stored in Local Storage with an onclick keyup.
 
 ### Tech
 
-Local Storage Demo is just kept simple using pure javscript. [Bootstrap] css is used for styling.
+Local Storage Demo is just kept simple using pure javscript. [Bootstrap] is used for styling.
 
 ### Installation
 
